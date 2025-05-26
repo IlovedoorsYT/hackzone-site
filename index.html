@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HackZone - Читы для Roblox и Minecraft</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @keyframes neon-glow {
+      0%, 100% { text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc, 0 0 30px #00ffcc; }
+      50% { text-shadow: 0 0 20px #ff00ff, 0 0 30px #ff00ff, 0 0 40px #ff00ff; }
+    }
+    .neon-text { animation: neon-glow 2s infinite; }
+    body { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); }
+    .card { transition: transform 0.3s ease; }
+    .card:hover { transform: scale(1.05); }
+    .cheat-img { max-height: 150px; object-fit: cover; width: 100%; }
+  </style>
+</head>
+<body class="text-white font-sans">
+  <!-- Header -->
+  <header class="bg-gray-900 bg-opacity-80 p-4 flex justify-between items-center">
+    <h1 class="text-3xl font-bold neon-text">HackZone</h1>
+    <nav>
+      <ul class="flex space-x-4">
+        <li><a href="#home" class="hover:text-cyan-400">Главная</a></li>
+        <li><a href="#cheats" class="hover:text-cyan-400">Читы</a></li>
+        <li><a href="#download" class="hover:text-cyan-400">Скачать</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="flex flex-col items-center justify-center h-screen text-center">
+    <h2 class="text-5xl font-extrabold neon-text mb-4">Взломай Roblox и Minecraft!</h2>
+    <p class="text-xl mb-6">Читы для Roblox, Minecraft и эксклюзивная утилита для Minecraft. Доминируй без банов!</p>
+    <img src="https://cdn.pixabay.com/photo/2023/08/27/16/58/gaming-8217680_1280.jpg" alt="Gaming Hacking Vibe" class="w-1/2 rounded-lg shadow-lg mb-6">
+    <a href="#download" class="bg-cyan-500 text-black py-2 px-6 rounded-full hover:bg-cyan-400">Скачать сейчас</a>
+  </section>
+
+  <!-- Cheats Section -->
+  <section id="cheats" class="py-16 px-4">
+    <h2 class="text-4xl font-bold text-center neon-text mb-8">Наши читы</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+      <div class="card bg-gray-800 p-6 rounded-lg shadow-lg">
+        <h3 class="text-2xl font-bold mb-2">Roblox Читы</h3>
+        <img src="https://cdn.pixabay.com/photo/2023/08/03/15/29/roblox-8167004_1280.jpg" alt="Roblox Cheats" class="cheat-img rounded-lg mb-4">
+        <p>Скрипты для Roblox: автоприцел, спидхак, телепорт и обход античитов.</p>
+      </div>
+      <div class="card bg-gray-800 p-6 rounded-lg shadow-lg">
+        <h3 class="text-2xl font-bold mb-2">Minecraft Читы</h3>
+        <img src="https://cdn.pixabay.com/photo/2017/03/27/14/56/controller-2179066_1280.jpg" alt="Minecraft Cheats" class="cheat-img rounded-lg mb-4">
+        <p>KillAura, Fly, X-Ray и другие моды для полного контроля в Minecraft.</p>
+      </div>
+      <div class="card bg-gray-800 p-6 rounded-lg shadow-lg">
+        <h3 class="text-2xl font-bold mb-2">Minecraft HackZone Utility</h3>
+        <img src="https://cdn.pixabay.com/photo/2016/11/29/12/56/computer-1869236_1280.jpg" alt="HackZone Utility" class="cheat-img rounded-lg mb-4">
+        <p>Эксклюзивный сборник читов для Minecraft: всё в одном, с удобным интерфейсом.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Download Section -->
+  <section id="download" class="py-16 px-4 text-center">
+    <h2 class="text-4xl font-bold neon-text mb-8">Готов разнести всех?</h2>
+    <p class="text-xl mb-6">Скачай читы для Roblox, Minecraft или нашу утилиту и начни доминировать!</p>
+    <a href="#" class="bg-red-500 text-white py-2 px-6 rounded-full hover:bg-red-400">Скачать HackZone</a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 p-4 text-center">
+    <p>© 2025 HackZone. Всё для геймеров, без тормозов! 😎</p>
+  </footer>
+
+  <script>
+    // Smooth scrolling for nav links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>
