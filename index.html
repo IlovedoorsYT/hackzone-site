@@ -14,7 +14,8 @@
     body { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); }
     .card { transition: transform 0.3s ease; }
     .card:hover { transform: scale(1.05); }
-    .cheat-img { max-height: 250px; object-fit: cover; width: 100%; }
+    .cheat-img { max-height: 300px; aspect-ratio: 1/1; object-fit: cover; width: 100%; }
+    .card-container { max-width: 600px; }
   </style>
 </head>
 <body class="text-white font-sans">
@@ -41,7 +42,7 @@
   <!-- Cheats Section -->
   <section id="cheats" class="py-16 px-4">
     <h2 class="text-4xl font-bold text-center neon-text mb-8">Наши читы</h2>
-    <div class="grid grid-cols-1 gap-8 max-w-3xl mx-auto">
+    <div class="grid grid-cols-1 gap-8 card-container mx-auto">
       <div class="card bg-gray-800 p-8 rounded-lg shadow-lg">
         <h3 class="text-3xl font-bold mb-4">Roblox Читы</h3>
         <img src="images/roblox.jpg" alt="Roblox Cheats" class="cheat-img rounded-lg mb-4">
