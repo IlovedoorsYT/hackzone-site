@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HackZone - Каталог читов</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @keyframes neon-glow {
+      0%, 100% { text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc, 0 0 30px #00ffcc; }
+      50% { text-shadow: 0 0 20px #ff00ff, 0 0 30px #ff00ff, 0 0 40px #ff00ff; }
+    }
+    .neon-text { animation: neon-glow 0.8s infinite linear; }
+    body { background: linear-gradient(135deg, #1c2526, #2e4347); }
+  </style>
+</head>
+<body class="text-white font-sans">
+  <!-- Header -->
+  <header class="bg-gray-900 bg-opacity-80 p-4 flex justify-between items-center">
+    <h1 class="text-3xl font-bold neon-text">HackZone</h1>
+    <nav>
+      <ul class="flex space-x-4">
+        <li><a href="index.html#home" class="hover:text-cyan-400">Главная</a></li>
+        <li><a href="index.html#cheats" class="hover:text-cyan-400">Читы</a></li>
+        <li><a href="index.html#download" class="hover:text-cyan-400">Скачать</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Catalog Section -->
+  <section id="catalog" class="py-16 px-4 text-center">
+    <h2 class="text-4xl font-bold neon-text mb-8">Каталог читов</h2>
+    <div id="minecraft" class="mb-12">
+      <h3 class="text-3xl font-bold mb-4">Minecraft Читы</h3>
+      <p class="text-lg mb-6">Скоро здесь появятся читы для Minecraft! Следи за обновлениями.</p>
+      <!-- Заглушка для .jar-файлов -->
+      <!-- Пример: <a href="mods/HackZoneCheat-1.16.5.jar" class="bg-red-500 text-white py-2 px-6 rounded-full hover:bg-red-400">Скачать для 1.16.5</a> -->
+    </div>
+    <div id="roblox">
+      <h3 class="text-3xl font-bold mb-4">Roblox Читы</h3>
+      <p class="text-lg mb-6">Скоро здесь появятся скрипты для Roblox! Следи за обновлениями.</p>
+      <!-- Заглушка для скриптов -->
+      <!-- Пример: <a href="mods/RobloxScript.lua" class="bg-red-500 text-white py-2 px-6 rounded-full hover:bg-red-400">Скачать скрипт</a> -->
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 p-4 text-center">
+    <p>© 2025 HackZone. Всё для геймеров, без тормозов! 🚀</p>
+  </footer>
+
+  <script>
+    // Smooth scrolling for nav links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>
