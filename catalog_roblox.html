@@ -12,6 +12,9 @@
     }
     .neon-text { animation: neon-glow 0.8s infinite linear; }
     body { background: linear-gradient(135deg, #1c2526, #2e4347); }
+    .cheat-img { max-height: 200px; aspect-ratio: 4/3; object-fit: cover; width: 100%; }
+    .cheat-container { max-width: 1000px; }
+    .cheat-card { max-width: 300px; }
   </style>
 </head>
 <body class="text-white font-sans">
@@ -28,11 +31,50 @@
   </header>
 
   <!-- Roblox Catalog Section -->
-  <section id="roblox" class="py-16 px-4 text-center">
-    <h2 class="text-4xl font-bold neon-text mb-8">Каталог читов для Roblox</h2>
-    <p class="text-lg mb-6">Скоро здесь появятся скрипты для Roblox! Следи за обновлениями.</p>
-    <!-- Заглушка для скриптов -->
-    <!-- Пример: <a href="mods/RobloxScript.lua" class="bg-red-500 text-white py-2 px-6 rounded-full hover:bg-red-400">Скачать скрипт</a> -->
+  <section id="roblox" class="py-16 px-4">
+    <h2 class="text-4xl font-bold text-center neon-text mb-8">Каталог читов для Roblox</h2>
+    <div class="grid grid-cols-3 gap-6 cheat-container mx-auto">
+      <!-- Xeno Executor -->
+      <div class="cheat-card bg-gray-800 p-6 rounded-lg shadow-lg">
+        <h3 class="text-2xl font-bold mb-6 text-center">Xeno Executor</h3>
+        <img src="images/xeno.jpg" alt="Xeno Executor" class="cheat-img rounded-lg mb-6">
+        <p class="text-base mb-6">Мощный executor для Roblox с поддержкой сложных скриптов.</p>
+        <!-- Заглушка для скачивания -->
+        <!-- Пример: <a href="mods/xeno_executor.lua" class="bg-red-500 text-white py-2 px-4 rounded-full hover:bg-red-400">Скачать</a> -->
+      </div>
+      <!-- Swift Executor -->
+      <div class="cheat-card bg-gray-800 p-6 rounded-lg shadow-lg">
+        <h3 class="text-2xl font-bold mb-6 text-center">Swift Executor</h3>
+        <img src="images/swift.jpg" alt="Swift Executor" class="cheat-img rounded-lg mb-6">
+        <p class="text-base mb-6">Быстрый и лёгкий executor для Roblox, для новичков.</p>
+        <!-- Заглушка для скачивания -->
+        <!-- Пример: <a href="mods/swift_executor.lua" class="bg-red-500 text-white py-2 px-4 rounded-full hover:bg-red-400">Скачать</a> -->
+      </div>
+      <!-- Roblox Cheat 3 -->
+      <div class="cheat-card bg-gray-800 p-6 rounded-lg shadow-lg">
+        <h3 class="text-2xl font-bold mb-6 text-center">Roblox Cheat 3</h3>
+        <img src="images/roblox_cheat3.jpg" alt="Roblox Cheat 3" class="cheat-img rounded-lg mb-6">
+        <p class="text-base mb-6">Скрипт с автоприцелом и спидхаком.</p>
+        <!-- Заглушка для скачивания -->
+        <!-- Пример: <a href="mods/roblox_cheat3.lua" class="bg-red-500 text-white py-2 px-4 rounded-full hover:bg-red-400">Скачать</a> -->
+      </div>
+      <!-- Roblox Cheat 4 -->
+      <div class="cheat-card bg-gray-800 p-6 rounded-lg shadow-lg">
+        <h3 class="text-2xl font-bold mb-6 text-center">Roblox Cheat 4</h3>
+        <img src="images/roblox_cheat4.jpg" alt="Roblox Cheat 4" class="cheat-img rounded-lg mb-6">
+        <p class="text-base mb-6">Чит с телепортом и обходом банов.</p>
+        <!-- Заглушка для скачивания -->
+        <!-- Пример: <a href="mods/roblox_cheat4.lua" class="bg-red-500 text-white py-2 px-4 rounded-full hover:bg-red-400">Скачать</a> -->
+      </div>
+      <!-- Roblox Cheat 5 -->
+      <div class="cheat-card bg-gray-800 p-6 rounded-lg shadow-lg">
+        <h3 class="text-2xl font-bold mb-6 text-center">Roblox Cheat 5</h3>
+        <img src="images/roblox_cheat5.jpg" alt="Roblox Cheat 5" class="cheat-img rounded-lg mb-6">
+        <p class="text-base mb-6">Многофункциональный скрипт с кастомизацией.</p>
+        <!-- Заглушка для скачивания -->
+        <!-- Пример: <a href="mods/roblox_cheat5.lua" class="bg-red-500 text-white py-2 px-4 rounded-full hover:bg-red-400">Скачать</a> -->
+      </div>
+    </div>
   </section>
 
   <!-- Footer -->
