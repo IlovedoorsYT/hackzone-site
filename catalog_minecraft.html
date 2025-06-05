@@ -25,6 +25,34 @@
       object-fit: contain;
       filter: brightness(110%) contrast(110%);
     }
+    .modal {
+      transition: opacity 0.3s ease;
+    }
+    .modal-content {
+      max-width: 600px;
+      max-height: 90vh;
+      background: #1c2526;
+      color: #ffffff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px #00ffcc, 0 0 30px #ff00ff;
+      overflow-y: auto;
+      position: relative;
+    }
+    .modal h3, .modal p {
+      text-shadow: 0 0 10px #00ffcc, 0 0 20px #ff00ff;
+    }
+    .modal-close {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      font-size: 24px;
+      cursor: pointer;
+      color: #00ffcc;
+    }
+    .modal-close:hover {
+      color: #ff00ff;
+    }
   </style>
 </head>
 <body class="text-white font-sans">
@@ -49,6 +77,7 @@
         <h3 class="text-2xl font-bold mb-6 text-center">Rise Client 6.5.4</h3>
         <img src="images/rise_client.jpg" alt="Rise Client 6.5.4" class="cheat-img highlight-img rounded-lg mb-6">
         <p class="text-base mb-6">Мощный чит для Minecraft с огромным количеством функций и с прекрасным обходом античитов.</p>
+        <a href="#" class="tutorial-btn bg-purple-500 text-white py-2 px-4 rounded-full hover:bg-purple-400 block text-center mb-2" data-modal="modal-rise">Туториал</a>
         <a href="https://www.mediafire.com/file/me88m5r5wa8x3a8/Rise_6.5.4.rar/file" class="bg-blue-500 text-white py-2 px-4 rounded-full hover:bg-blue-400 block text-center mt-auto">Скачать</a>
       </div>
       <!-- Augustus X Client -->
@@ -56,6 +85,7 @@
         <h3 class="text-2xl font-bold mb-6 text-center">Augustus X Client</h3>
         <img src="images/augustus_x.jpg" alt="Augustus X Client" class="cheat-img highlight-img rounded-lg mb-6">
         <p class="text-base mb-6">Мощный чит для Minecraft с огромным количеством функций и с прекрасным обходом античитов.</p>
+        <a href="#" class="tutorial-btn bg-purple-500 text-white py-2 px-4 rounded-full hover:bg-purple-400 block text-center mb-2" data-modal="modal-augustus">Туториал</a>
         <a href="https://www.mediafire.com/file/29b8qnx8y1zq3mb/AugustusX-Client-Release-b12.24.37.42.zip/file" class="bg-blue-500 text-white py-2 px-4 rounded-full hover:bg-blue-400 block text-center mt-auto">Скачать</a>
       </div>
       <!-- LiquidBounce -->
@@ -63,6 +93,7 @@
         <h3 class="text-2xl font-bold mb-6 text-center">LiquidBounce</h3>
         <img src="images/liquidbounce.jpg" alt="LiquidBounce" class="cheat-img highlight-img rounded-lg mb-6">
         <p class="text-base mb-6">Скрипт на множество майнкрафт версиий, начиная от 1.8 до самой последней версии.</p>
+        <a href="#" class="tutorial-btn bg-purple-500 text-white py-2 px-4 rounded-full hover:bg-purple-400 block text-center mb-2" data-modal="modal-liquidbounce">Туториал</a>
         <a href="https://github.com/CCBlueX/LiquidLauncher/releases/download/v0.5.0/LiquidLauncher_0.5.0_x64_en-US.msi" class="bg-blue-500 text-white py-2 px-4 rounded-full hover:bg-blue-400 block text-center mt-auto">Скачать</a>
       </div>
       <!-- Minecraft Cheat 4 -->
@@ -70,6 +101,7 @@
         <h3 class="text-2xl font-bold mb-6 text-center">Minecraft Cheat 4</h3>
         <img src="images/minecraft_cheat4.jpg" alt="Minecraft Cheat 4" class="cheat-img rounded-lg mb-6">
         <p class="text-base mb-6">Чит с анти-отдачей и автоатакой.</p>
+        <a href="#" class="tutorial-btn bg-purple-500 text-white py-2 px-4 rounded-full hover:bg-purple-400 block text-center mb-2" data-modal="modal-cheat4">Туториал</a>
         <a href="mods/minecraft_cheat4.jar" class="bg-blue-500 text-white py-2 px-4 rounded-full hover:bg-blue-400 block text-center mt-auto">Скачать</a>
       </div>
       <!-- Minecraft Cheat 5 -->
@@ -77,6 +109,7 @@
         <h3 class="text-2xl font-bold mb-6 text-center">Minecraft Cheat 5</h3>
         <img src="images/minecraft_cheat5.jpg" alt="Minecraft Cheat 5" class="cheat-img rounded-lg mb-6">
         <p class="text-base mb-6">Многофункциональный чит с ESP.</p>
+        <a href="#" class="tutorial-btn bg-purple-500 text-white py-2 px-4 rounded-full hover:bg-purple-400 block text-center mb-2" data-modal="modal-cheat5">Туториал</a>
         <a href="mods/minecraft_cheat5.jar" class="bg-blue-500 text-white py-2 px-4 rounded-full hover:bg-blue-400 block text-center mt-auto">Скачать</a>
       </div>
       <!-- Minecraft Cheat 6 -->
@@ -84,6 +117,7 @@
         <h3 class="text-2xl font-bold mb-6 text-center">Minecraft Cheat 6</h3>
         <img src="images/minecraft_cheat6.jpg" alt="Minecraft Cheat 6" class="cheat-img rounded-lg mb-6">
         <p class="text-base mb-6">Чит с функцией полёта.</p>
+        <a href="#" class="tutorial-btn bg-purple-500 text-white py-2 px-4 rounded-full hover:bg-purple-400 block text-center mb-2" data-modal="modal-cheat6">Туториал</a>
         <a href="mods/minecraft_cheat6.jar" class="bg-blue-500 text-white py-2 px-4 rounded-full hover:bg-blue-400 block text-center mt-auto">Скачать</a>
       </div>
       <!-- Minecraft Cheat 7 -->
@@ -91,6 +125,7 @@
         <h3 class="text-2xl font-bold mb-6 text-center">Minecraft Cheat 7</h3>
         <img src="images/minecraft_cheat7.jpg" alt="Minecraft Cheat 7" class="cheat-img rounded-lg mb-6">
         <p class="text-base mb-6">Скрипт с автостроем и макросами.</p>
+        <a href="#" class="tutorial-btn bg-purple-500 text-white py-2 px-4 rounded-full hover:bg-purple-400 block text-center mb-2" data-modal="modal-cheat7">Туториал</a>
         <a href="mods/minecraft_cheat7.jar" class="bg-blue-500 text-white py-2 px-4 rounded-full hover:bg-blue-400 block text-center mt-auto">Скачать</a>
       </div>
       <!-- Minecraft Cheat 8 -->
@@ -98,10 +133,69 @@
         <h3 class="text-2xl font-bold mb-6 text-center">Minecraft Cheat 8</h3>
         <img src="images/minecraft_cheat8.jpg" alt="Minecraft Cheat 8" class="cheat-img rounded-lg mb-6">
         <p class="text-base mb-6">Чит с улучшенным прицелом и трейсерами.</p>
+        <a href="#" class="tutorial-btn bg-purple-500 text-white py-2 px-4 rounded-full hover:bg-purple-400 block text-center mb-2" data-modal="modal-cheat8">Туториал</a>
         <a href="mods/minecraft_cheat8.jar" class="bg-blue-500 text-white py-2 px-4 rounded-full hover:bg-blue-400 block text-center mt-auto">Скачать</a>
       </div>
     </div>
   </section>
+
+  <!-- Modals -->
+  <div id="modal-rise" class="modal fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden">
+    <div class="modal-content bg-gray-900 text-white p-6 rounded-lg max-w-md relative">
+      <span class="modal-close absolute top-2 right-2 text-xl cursor-pointer">×</span>
+      <h3 class="text-lg font-bold mb-4">Rise Client 6.5.4 - Туториал</h3>
+      <p>Здесь будет текст туториала для Rise Client 6.5.4.</p>
+    </div>
+  </div>
+  <div id="modal-augustus" class="modal fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden">
+    <div class="modal-content bg-gray-900 text-white p-6 rounded-lg max-w-md relative">
+      <span class="modal-close absolute top-2 right-2 text-xl cursor-pointer">×</span>
+      <h3 class="text-lg font-bold mb-4">Augustus X Client - Туториал</h3>
+      <p>Здесь будет текст туториала для Augustus X Client.</p>
+    </div>
+  </div>
+  <div id="modal-liquidbounce" class="modal fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden">
+    <div class="modal-content bg-gray-900 text-white p-6 rounded-lg max-w-md relative">
+      <span class="modal-close absolute top-2 right-2 text-xl cursor-pointer">×</span>
+      <h3 class="text-lg font-bold mb-4">LiquidBounce - Туториал</h3>
+      <p>Здесь будет текст туториала для LiquidBounce.</p>
+    </div>
+  </div>
+  <div id="modal-cheat4" class="modal fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden">
+    <div class="modal-content bg-gray-900 text-white p-6 rounded-lg max-w-md relative">
+      <span class="modal-close absolute top-2 right-2 text-xl cursor-pointer">×</span>
+      <h3 class="text-lg font-bold mb-4">Minecraft Cheat 4 - Туториал</h3>
+      <p>Здесь будет текст туториала для Minecraft Cheat 4.</p>
+    </div>
+  </div>
+  <div id="modal-cheat5" class="modal fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden">
+    <div class="modal-content bg-gray-900 text-white p-6 rounded-lg max-w-md relative">
+      <span class="modal-close absolute top-2 right-2 text-xl cursor-pointer">×</span>
+      <h3 class="text-lg font-bold mb-4">Minecraft Cheat 5 - Туториал</h3>
+      <p>Здесь будет текст туториала для Minecraft Cheat 5.</p>
+    </div>
+  </div>
+  <div id="modal-cheat6" class="modal fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden">
+    <div class="modal-content bg-gray-900 text-white p-6 rounded-lg max-w-md relative">
+      <span class="modal-close absolute top-2 right-2 text-xl cursor-pointer">×</span>
+      <h3 class="text-lg font-bold mb-4">Minecraft Cheat 6 - Туториал</h3>
+      <p>Здесь будет текст туториала для Minecraft Cheat 6.</p>
+    </div>
+  </div>
+  <div id="modal-cheat7" class="modal fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden">
+    <div class="modal-content bg-gray-900 text-white p-6 rounded-lg max-w-md relative">
+      <span class="modal-close absolute top-2 right-2 text-xl cursor-pointer">×</span>
+      <h3 class="text-lg font-bold mb-4">Minecraft Cheat 7 - Туториал</h3>
+      <p>Здесь будет текст туториала для Minecraft Cheat 7.</p>
+    </div>
+  </div>
+  <div id="modal-cheat8" class="modal fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden">
+    <div class="modal-content bg-gray-900 text-white p-6 rounded-lg max-w-md relative">
+      <span class="modal-close absolute top-2 right-2 text-xl cursor-pointer">×</span>
+      <h3 class="text-lg font-bold mb-4">Minecraft Cheat 8 - Туториал</h3>
+      <p>Здесь будет текст туториала для Minecraft Cheat 8.</p>
+    </div>
+  </div>
 
   <!-- Footer -->
   <footer class="bg-gray-900 p-4 text-center">
@@ -116,6 +210,42 @@
         document.querySelector(this.getAttribute('href')).scrollIntoView({
           behavior: 'smooth'
         });
+      });
+    });
+
+    // Modal functionality
+    const tutorialButtons = document.querySelectorAll('.tutorial-btn');
+    const modals = document.querySelectorAll('.modal');
+    const closeButtons = document.querySelectorAll('.modal-close');
+
+    tutorialButtons.forEach(button => {
+      button.addEventListener('click', function (e) {
+        e.preventDefault();
+        const modalId = this.getAttribute('data-modal');
+        const modal = document.getElementById(modalId);
+        modal.classList.remove('hidden');
+        modal.style.opacity = '1';
+      });
+    });
+
+    closeButtons.forEach(button => {
+      button.addEventListener('click', function () {
+        const modal = this.closest('.modal');
+        modal.style.opacity = '0';
+        setTimeout(() => {
+          modal.classList.add('hidden');
+        }, 300);
+      });
+    });
+
+    modals.forEach(modal => {
+      modal.addEventListener('click', function (e) {
+        if (e.target === modal) {
+          modal.style.opacity = '0';
+          setTimeout(() => {
+            modal.classList.add('hidden');
+          }, 300);
+        }
       });
     });
   </script>
